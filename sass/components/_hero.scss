@@ -9,7 +9,7 @@
     //padding-top: 200px;
     //padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/hero-mobile.jpg);
+    url(../images/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: inherit;
@@ -20,7 +20,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/hero-mobile@2x.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-mobile@2x.jpg');
   }
 }
 
@@ -37,7 +37,7 @@
 screen and (min-width: 768px) and (min-resolution: 2dppx), 
 screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/hero-tab@2x.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-tab@2x.jpg');
     width: 1200px;
     background-size: cover;
   }
@@ -46,7 +46,7 @@ screen and (min-width: 768px) and (min-resolution: 192dpi) {
 @include desktop {
     .hero {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/hero-desk.jpg);
+        url(../images/hero-desk.jpg);
         height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;
@@ -59,7 +59,7 @@ screen and (min-width: 768px) and (min-resolution: 192dpi) {
 screen and (min-width: 1200px) and (min-resolution: 2dppx), 
 screen and (min-width: 1200px) and (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/hero-desk@2x.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-desk@2x.jpg');
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
