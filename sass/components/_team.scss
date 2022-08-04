@@ -1,3 +1,5 @@
+@import "../utils/brakepoints";
+
 .team {
     background-color: var(--third-background);
     padding-top: 30px;
@@ -16,8 +18,22 @@
 
 .team__list {
     list-style-type: none;
-    //display: flex;
     padding-left: 0;
+}
+
+@include tablet {
+    .team__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 60px)/2);
+    }
+}
+
+@include desktop {
+    .team__list {
+        flex-wrap: nowrap;
+        flex-basis: calc(100% / 4 - 30px);
+    }
 }
 
 .team__item {
@@ -28,12 +44,29 @@
     &:not(:last-child){
         margin-bottom: 30px;
     }
+}
 
-    //&:not(:last-child){
-       // margin-right: 30px;
-   // }
+@media screen  and (min-width:768px)and (max-width:1199px) {
+    .team__item:nth-child(2n) {
+        margin-left: 30px;
+    }
+}
 
+@include tablet {
+    .team__item:last-child {
+        margin-bottom: 30px;
+    }
+}
 
+@include desktop {
+    .team__item {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .team__item:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .team__name {
@@ -63,7 +96,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    //margin: 0 auto;
 }
 
 .team__link {

@@ -1,14 +1,33 @@
+@import "../utils/brakepoints";
+
 .container {
-    //width: 1200px;
     width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
     }
 
+@include tablet {
+    .container {
+        width: 768px;
+    }
+}
+
+@include desktop {
+    .container{
+        width: 1200px;
+    }
+}
+
 .section {
     padding-top: 30px;
     padding-bottom: 30px;
-    //padding-top: 94px;
-    //padding-bottom: 94px;
+    
+}
+
+@include desktop {
+    .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
 }

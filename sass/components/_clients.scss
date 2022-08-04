@@ -1,10 +1,24 @@
+@import "../utils/brakepoints";
+
 .clients__list {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 50%;
     justify-content: space-evenly;
+}
 
+@include tablet {
+    .clients__list {
+        flex-basis: calc((100% - 90px)/3);
+        margin: 0 -30px;
+    }
+}
 
+@include desktop {
+    .clients__list {
+        flex-basis: calc(100% / 6 - 30px);
+        margin: 0;
+    }
 }
 
 .clients__item {
@@ -15,6 +29,19 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+}
+
+@include tablet {
+    .clients__item {
+        width: 226px;
+    }
+}
+
+@include desktop {
+    .clients__item {
+        width: 170px;
+        margin: 0;
+    }
 }
 
 .clients__item:nth-child(6n),
@@ -53,5 +80,11 @@
     .clients__link:hover &,
     .clients__link:focus & {
         fill: var(--accent-color);
+    }
+}
+
+@include desktop {
+    .clients {
+        padding-top: 0;
     }
 }

@@ -1,3 +1,5 @@
+@import "../utils/brakepoints";
+
 .filters {
     display: flex;
     flex-wrap: wrap;
@@ -9,8 +11,10 @@
     column-gap: 15px;
 }
 
-.filters__item:not(:last-child) {
-    //margin-right: 8px;
+@include tablet {
+    .filters {
+        justify-content: center;
+    }
 }
 
 .filters__button {

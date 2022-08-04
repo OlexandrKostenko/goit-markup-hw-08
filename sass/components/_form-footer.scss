@@ -1,10 +1,25 @@
+@import "../utils/brakepoints";
+
+@include tablet {
+    .footer-form {
+        margin-top: 60px;
+    }
+}
+
 .footer-form {
     //margin-left: 93px;
 }
 
+@include desktop {
+    .footer-form {
+        margin-top: 0;
+        margin-left: 93px;
+        margin-right: auto;
+    }
+}
+
 .footer-form__input {
     width: 450px;
-    //width: 358px;
     height: 50px;
     border-radius: 4px;
     padding: 15px 16px;
@@ -17,6 +32,21 @@
     &:focus-within{
         outline: none;
         border: 1px solid var(--accent-color);
+    }
+}
+
+
+
+@include tablet {
+    .footer-form__input {
+        margin-left: 150px;
+    }
+}
+
+@include desktop {
+    .footer-form__input {
+        margin-left: 0;
+        width: 358px;
     }
 }
 
@@ -37,10 +67,22 @@
     display: inline-flex;
     align-items: center;
     text-align: center;
-    //margin-left: 12px;
     margin: 0 120px;
 }
 
 .footer-form__icon {
     margin-left: 10px;
+}
+
+@include tablet {
+    .footer-form__submit {
+        margin-left: 290px;
+    }
+}
+
+@include desktop {
+    .footer-form__submit {
+        margin-left: 12px;
+        margin-right: 0;
+    }
 }

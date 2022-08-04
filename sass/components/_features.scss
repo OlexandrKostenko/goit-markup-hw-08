@@ -1,7 +1,23 @@
+@import "../utils/brakepoints";
+
 .features__list {
     //display: flex;
     padding-left: 0;
     list-style-type: none;
+}
+
+@include tablet {
+    .features__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@include desktop {
+    .features__list {
+        flex-wrap: nowrap;
+        flex-basis: calc(100%/4 - 30px);
+    }
 }
 
 .features__item {
@@ -9,13 +25,25 @@
     width: 100%;
 }
 
-.features__item:not(:last-child){
-    margin-bottom: 30px;
+@include tablet {
+    .features__item {
+        flex-basis: 50%;
+        width: 50%;
+        padding: 15px;
+        margin-bottom: 0;
+    }
 }
 
+@media screen and (max-width:767px ){
+    .features__item:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
 
-.features__item + .features__item {
-    //margin-left: 30px;
+@include desktop {
+    .features__item {
+        width: 270px;
+    }
 }
 
 .features__title {
@@ -30,13 +58,24 @@
 .features__icons {
     display: flex;
     width: 450px;
-    //width: 270px;
     height: 120px;
     background: var(--third-background);
     border-radius: 4px;
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
+}
+
+@include tablet {
+    .features__icons {
+        width: 354px;
+    }
+}
+
+@include desktop {
+    .features__icons {
+        width: 270px;
+    }
 }
 
 .features__icons + .features__icons {

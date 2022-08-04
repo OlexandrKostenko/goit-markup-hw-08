@@ -1,4 +1,4 @@
-
+@import "../utils/brakepoints";
 
 .logo--footer {
     font-family: var(--logo-fonts);
@@ -18,10 +18,7 @@
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    //margin-top: 20px;
-
 }
-
 
 .address p,
 .address__mail,
@@ -97,6 +94,13 @@
     text-align: center;
 }
 
+@include desktop {
+    .join__title,
+    .footer-form__title {
+    text-align: start;
+}
+}
+
 .footer__container {
     display: flex;
     flex-direction: column;
@@ -105,16 +109,49 @@
     background-color: var(--secondary-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    //align-items: flex-start;
+}
+
+
+
+@include tablet {
+    .footer__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+}
+
+@include desktop {
+    .footer__container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
 }
 
 .footer__contacts {
     display: flex;
     flex-direction: column;
     text-align: center;
-    //margin-right: 70px;
 }
 
-.join {
-    margin: 60px auto;
+@include desktop {
+    .footer__contacts {
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .join {
+        margin: 60px auto;
+    }
+}
+
+
+
+@include tablet {
+    .join {
+        //margin-left: 165px;
+    }
 }

@@ -1,4 +1,9 @@
+@import "../utils/brakepoints";
+
 .hero {
+    max-width: 100%;
+    min-width: 480px;
+    height: 400px;
     background-color: var(--secondary-background-color);
     color: var(--white-color);
     //padding-top: 200px;
@@ -7,8 +12,8 @@
     url(../../images/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    //background-size: 1600px;
+    background-size: inherit;
+    
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -19,20 +24,69 @@
   }
 }
 
+@include tablet {
+    .hero {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/hero-tab.jpg);
+        width: 1200px;
+        background-size: cover;
+    }
+}
+
+@media not all, screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), 
+screen and (min-width: 768px) and (min-resolution: 2dppx), 
+screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/hero-tab@2x.jpg');
+    width: 1200px;
+    background-size: cover;
+  }
+}
+
+@include desktop {
+    .hero {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/hero-desk.jpg);
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 1600px;
+        background-size: cover;
+    }
+}
+
+@media not all, screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), 
+screen and (min-width: 1200px) and (min-resolution: 2dppx), 
+screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/hero-desk@2x.jpg');
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 1600px;
+    background-size: cover;
+  }
+}
+
 .hero__title {
     padding-bottom: 30px;
     width: 360px;
     font-size: 26px;
     line-height: 1.62;
-    //width: 696px;
     margin-left: auto;
     margin-right: auto;
     font-weight: 900;
-    //font-size: 44px;
-    //line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+}
+
+@include desktop {
+    .hero__title {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero__button {
@@ -61,6 +115,12 @@
 
 .hero__thumb {
     padding: 118px 60px;
+}
+
+@include desktop {
+    .hero__thumb {
+        padding: 0;
+    }
 }
 
 .hero__section {

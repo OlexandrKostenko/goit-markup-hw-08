@@ -1,6 +1,15 @@
+@import "../utils/brakepoints";
+
 .our-work {
     display: none;
     padding-top: 0;
+    padding-bottom: 0;
+}
+
+@include desktop {
+    .our-work {
+        display: block;
+    }
 }
 
 .our-work__title {

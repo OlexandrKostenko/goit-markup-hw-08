@@ -14,7 +14,8 @@
 <body>
     <header class="page-header">
         <div class="container page-header__container">
-            <a href="./index.html" class="logo">Web<span class="logo__studio">Studio</span></a>
+            
+                <a href="./index.html" class="logo">Web<span class="logo__studio">Studio</span></a>
             <nav>
                 <ul class="site-nav">
                     <li class="site-nav__item">
@@ -28,24 +29,29 @@
                     </li>
                 </ul>
             </nav>
-            <a href="mailto:info@devstudio.com" class="mail">
-                <svg class="mail__icon" width="16px" height="12px">
-                    <use href="./images/icons.svg#envelope"></use>
-                </svg>
-                info@devstudio.com</a>
-            <a href="tel:+380961111111" class="phone">
-                <svg class="phone__icon" width="10px" height="16px">
-                    <use href="./images/icons.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a>
-                <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="menu-container" data-mobile-menu-open>
-                    <svg class="mobile-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-                        <use href="./images/icons.svg#menu"></use>
+            <div class="page-header__contacts">
+                <a href="mailto:info@devstudio.com" class="mail">
+                    <svg class="mail__icon" width="16px" height="12px">
+                        <use href="./images/icons.svg#envelope"></use>
                     </svg>
-                </button>
+                    info@devstudio.com</a>
+                <a href="tel:+380961111111" class="phone">
+                    <svg class="phone__icon" width="10px" height="16px">
+                        <use href="./images/icons.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+            </div>
+        <div class="thumb">
+            <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="menu-container" data-mobile-menu-open>
+            <svg class="mobile-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use href="./images/icons.svg#menu"></use>
+            </svg>
+        </button>
+    </div>
         </div>
+        
         <div class="menu-container js-menu-container" id="menu-container" data-mobile-menu>
-            <button type="button" class="menu-button js-close-menu" data-mobile-menu-close>
+            <button type="button" class="menu-button-close js-close-menu" data-mobile-menu-close>
                 <svg class="mobile-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use href="./images/icons.svg#close-burger"></use>
                 </svg>
@@ -53,10 +59,10 @@
             <div class="mobile-menu">
                 <ul>
                     <li class="mobile-nav__item">
-                        <a href="./index.html" class="mobile-nav__link current">Cтудия</a>
+                        <a href="./index.html" class="mobile-nav__link ">Cтудия</a>
                     </li>
                     <li class="mobile-nav__item">
-                        <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
+                        <a href="./portfolio.html" class="mobile-nav__link current">Портфолио</a>
                     </li>
                     <li class="mobile-nav__item">
                         <a href="" class="mobile-nav__link">Контакты</a>
@@ -79,7 +85,6 @@
                 </ul>
             </div>
         </div>
-
     </header>
     <main>
         
@@ -107,9 +112,9 @@
             <li class="portfolio__item">
                 <div class="portfolio__img">
                     <picture>
-                        <source srcset="./images/krak-mobile.jpg 1x, ./images/krak-mobile@2x.jpg 2x" media="(max-width:480px)"/>
-                        <source srcset="./images/krak-tab.jpg 1x, ./images/krak-tab@2x.jpg 2x" media="(max-width:768px)"/>
-                        <source srcset="./images/krak-desk.jpg 1x, ./images/krak-desk@2x.jpg 2x" media="(min-width:769px)"/>
+                        <source srcset="./images/krak-mobile.jpg 1x, ./images/krak-mobile@2x.jpg 2x" media="(max-width:767px)"/>
+                        <source srcset="./images/krak-tab.jpg 1x, ./images/krak-tab@2x.jpg 2x" media="(max-width:1199px)"/>
+                        <source srcset="./images/krak-desk.jpg 1x, ./images/krak-desk@2x.jpg 2x" media="(min-width:1200px)"/>
                         <img  class= "portfolio__photo" src="./images/krak-desk.jpg" alt="изображение веб-сайта компании Технокряк">
                     </picture>
                     <div class="portfolio__overlay">
@@ -124,12 +129,12 @@
             <li class="portfolio__item">
                 <div class="portfolio__img">
                     <picture>
-                        <source srcset="./images/orlean-mobile.jpg 1x, ./images/orlean-mobile@2x.jpg 2x" media="(max-width:480px)"/>
-                        <source srcset="./images/orlean-tab.jpg 1x, ./images/orlean-tab@2x.jpg 2x" media="(max-width:768px)"/>
-                        <source srcset="./images/orlean-desk.jpg 1x, ./images/orlean-desk@2x.jpg 2x" media="(min-width:769px)"/>
+                        <source srcset="./images/orlean-mobile.jpg 1x, ./images/orlean-mobile@2x.jpg 2x" media="(max-width:767px)"/>
+                        <source srcset="./images/orlean-tab.jpg 1x, ./images/orlean-tab@2x.jpg 2x" media="(max-width:1199px)"/>
+                        <source srcset="./images/orlean-desk.jpg 1x, ./images/orlean-desk@2x.jpg 2x" media="(min-width:1200px)"/>
                         <img  class= "portfolio__photo" src="./images/orlean-desk.jpg" alt="баскетбольный постер" >
                     </picture>
-    orlean<div class="portfolio__overlay">
+          <div class="portfolio__overlay">
                         <p class="portfolio__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
                 </div>
@@ -141,9 +146,9 @@
             <li class="portfolio__item">
                 <div class="portfolio__img">
                     <picture>
-                        <source srcset="./images/seafood-mobile.jpg 1x, ./images/seafood-mobile@2x.jpg 2x" media="(max-width:480px)"/>
-                        <source srcset="./images/seafood-tab.jpg 1x, ./images/seafood-tab@2x.jpg 2x" media="(max-width:768px)"/>
-                        <source srcset="./images/seafood-desk.jpg 1x, ./images/seafood-desk@2x.jpg 2x" media="(min-width:769px)"/>
+                        <source srcset="./images/seafood-mobile.jpg 1x, ./images/seafood-mobile@2x.jpg 2x" media="(max-width:767px)"/>
+                        <source srcset="./images/seafood-tab.jpg 1x, ./images/seafood-tab@2x.jpg 2x" media="(max-width:1199px)"/>
+                        <source srcset="./images/seafood-desk.jpg 1x, ./images/seafood-desk@2x.jpg 2x" media="(min-width:1200px)"/>
                         <img  class= "portfolio__photo" src="./images/seafood-desk.jpg" alt="логотип ресторана">
                     </picture>
                     
@@ -159,9 +164,9 @@
             <li class="portfolio__item">
                 <div class="portfolio__img">
                     <picture>
-                        <source srcset="./images/prime-mobile.jpg 1x, ./images/prime-mobile@2x.jpg 2x" media="(max-width:480px)"/>
-                        <source srcset="./images/prime-tab.jpg 1x, ./images/prime-tab@2x.jpg 2x" media="(max-width:768px)"/>
-                        <source srcset="./images/prime-desk.jpg 1x, ./images/prime-desk@2x.jpg 2x" media="(min-width:769px)"/>
+                        <source srcset="./images/prime-mobile.jpg 1x, ./images/prime-mobile@2x.jpg 2x" media="(max-width:767px)"/>
+                        <source srcset="./images/prime-tab.jpg 1x, ./images/prime-tab@2x.jpg 2x" media="(max-width:1199px)"/>
+                        <source srcset="./images/prime-desk.jpg 1x, ./images/prime-desk@2x.jpg 2x" media="(min-width:1200px)"/>
                         <img  class= "portfolio__photo" src="./images/prime-desk.jpg" alt="изображение наушников">
                     </picture>
                     <div class="portfolio__overlay">
@@ -176,9 +181,9 @@
             <li class="portfolio__item">
                 <div class="portfolio__img">
                     <picture>
-                        <source srcset="./images/box-mobile.jpg 1x, ./images/box-mobile@2x.jpg 2x" media="(max-width:480px)"/>
-                        <source srcset="./images/box-tab.jpg 1x, ./images/box-tab@2x.jpg 2x" media="(max-width:768px)"/>
-                        <source srcset="./images/box-desk.jpg 1x, ./images/box-desk@2x.jpg 2x" media="(min-width:769px)"/>
+                        <source srcset="./images/box-mobile.jpg 1x, ./images/box-mobile@2x.jpg 2x" media="(max-width:767px)"/>
+                        <source srcset="./images/box-tab.jpg 1x, ./images/box-tab@2x.jpg 2x" media="(max-width:1199px)"/>
+                        <source srcset="./images/box-desk.jpg 1x, ./images/box-desk@2x.jpg 2x" media="(min-width:1200px)"/>
                         <img  class= "portfolio__photo" src="./images/box-desk.jpg" alt="две коробки">
                     </picture>
                     
@@ -194,9 +199,9 @@
             <li class="portfolio__item">
                 <div class="portfolio__img">
                     <picture>
-                        <source srcset="./images/inspiration-mobile.jpg 1x, ./images/inspiration-mobile@2x.jpg 2x" media="(max-width:480px)"/>
-                        <source srcset="./images/inspiration-tab.jpg 1x, ./images/inspiration-tab@2x.jpg 2x" media="(max-width:768px)"/>
-                        <source srcset="./images/inspiration-desk.jpg 1x, ./images/inspiration-desk@2x.jpg 2x" media="(min-width:769px)"/>
+                        <source srcset="./images/inspiration-mobile.jpg 1x, ./images/inspiration-mobile@2x.jpg 2x" media="(max-width:767px)"/>
+                        <source srcset="./images/inspiration-tab.jpg 1x, ./images/inspiration-tab@2x.jpg 2x" media="(max-width:1199px)"/>
+                        <source srcset="./images/inspiration-desk.jpg 1x, ./images/inspiration-desk@2x.jpg 2x" media="(min-width:1200px)"/>
                         <img  class= "portfolio__photo" src="./images/inspiration-desk.jpg" alt="изображение в на мониторе">
                     </picture>
                     <div class="portfolio__overlay">
@@ -211,9 +216,9 @@
             <li class="portfolio__item">
                 <div class="portfolio__img">
                     <picture>
-                        <source srcset="./images/limited-mobile.jpg 1x, ./images/limited-mobile@2x.jpg 2x" media="(max-width:480px)"/>
-                        <source srcset="./images/limited-tab.jpg 1x, ./images/limited-tab@2x.jpg 2x" media="(max-width:768px)"/>
-                        <source srcset="./images/limited-desk.jpg 1x, ./images/limited-desk@2x.jpg 2x" media="(min-width:769px)"/>
+                        <source srcset="./images/limited-mobile.jpg 1x, ./images/limited-mobile@2x.jpg 2x" media="(max-width:767px)"/>
+                        <source srcset="./images/limited-tab.jpg 1x, ./images/limited-tab@2x.jpg 2x" media="(max-width:1199px)"/>
+                        <source srcset="./images/limited-desk.jpg 1x, ./images/limited-desk@2x.jpg 2x" media="(min-width:1200px)"/>
                         <img  class= "portfolio__photo" src="./images/limited-desk.jpg" alt="разворот книги">
                     </picture>
                     <div class="portfolio__overlay">
@@ -228,9 +233,9 @@
             <li class="portfolio__item">
                 <div class="portfolio__img">
                     <picture>
-                        <source srcset="./images/lab-mobile.jpg 1x, ./images/lab-mobile@2x.jpg 2x" media="(max-width:480px)"/>
-                        <source srcset="./images/lab-tab.jpg 1x, ./images/lab-tab@2x.jpg 2x" media="(max-width:768px)"/>
-                        <source srcset="./images/lab-desk.jpg 1x, ./images/lab-desk@2x.jpg 2x" media="(min-width:769px)"/>
+                        <source srcset="./images/lab-mobile.jpg 1x, ./images/lab-mobile@2x.jpg 2x" media="(max-width:767px)"/>
+                        <source srcset="./images/lab-tab.jpg 1x, ./images/lab-tab@2x.jpg 2x" media="(max-width:1199px)"/>
+                        <source srcset="./images/lab-desk.jpg 1x, ./images/lab-desk@2x.jpg 2x" media="(min-width:1200px)"/>
                         <img  class= "portfolio__photo" src="./images/lab-desk.jpg" alt="рекламный брелок">
                     </picture>
                     
@@ -246,9 +251,9 @@
             <li class="portfolio__item">
                 <div class="portfolio__img">
                     <picture>
-                        <source srcset="./images/business-mobile.jpg 1x, ./images/business-mobile@2x.jpg 2x" media="(max-width:480px)"/>
-                        <source srcset="./images/business-tab.jpg 1x, ./images/business-tab@2x.jpg 2x" media="(max-width:768px)"/>
-                        <source srcset="./images/business-desk.jpg 1x, ./images/business-desk@2x.jpg 2x" media="(min-width:769px)"/>
+                        <source srcset="./images/business-mobile.jpg 1x, ./images/business-mobile@2x.jpg 2x" media="(max-width:767px)"/>
+                        <source srcset="./images/business-tab.jpg 1x, ./images/business-tab@2x.jpg 2x" media="(max-width:1199px)"/>
+                        <source srcset="./images/business-desk.jpg 1x, ./images/business-desk@2x.jpg 2x" media="(min-width:1200px)"/>
                         <img  class= "portfolio__photo" src="./images/business-desk.jpg" alt="изображение приложения на экране ноутбука">
                     </picture>
                     

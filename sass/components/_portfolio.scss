@@ -1,3 +1,5 @@
+@import "../utils/brakepoints";
+
 .portfolio {
     list-style-type: none;
     display: flex;
@@ -14,13 +16,18 @@
     margin-bottom: 4px;
 }
 
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .portfolio__title {
+        font-size: 17px;
+    }
+}
+
 .portfolio__type {
     font-size: 16px;
     line-height: 1.88;
 }
 
 .portfolio__item {
-    margin-right: 30px;
     margin-bottom: 30px;    
 
     &:hover{
@@ -29,6 +36,34 @@
     }
 
     &:nth-child(3n){
+        margin-right: 0;
+    }
+}
+
+@include tablet {
+    .portfolio__item {
+        width: 354px;
+        display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    }
+}
+
+@include tablet {
+    .portfolio__item:nth-child(2n-1) {
+        margin-right: 30px;
+    }
+}
+
+@include desktop {
+    .portfolio__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 370px;   
+    }
+
+    .portfolio__item:nth-child(3n){
         margin-right: 0;
     }
 }
@@ -80,5 +115,17 @@
     padding: 63px 24px;
     line-height: 1.56;
     font-size: 18px;
+}
+
+@include tablet {
+    .portfolio__overlay {
+        width: 354px;
+    }
+}
+
+@include desktop {
+    .portfolio__overlay {
+        width: 370px;
+    }
 }
 
