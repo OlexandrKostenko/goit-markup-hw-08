@@ -1,2 +1,2 @@
 # goit-markup-hw-07
-Сьоме ДЗ в GOIT
+Восьме ДЗ в GOIT
