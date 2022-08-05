@@ -116,7 +116,7 @@ screen and (min-width: 1200px) and (min-resolution: 192dpi) {
     padding-top: 118px;
 }
 
-@include desktop {
+@include tablet {
     .hero__thumb {
         padding: 0;
     }

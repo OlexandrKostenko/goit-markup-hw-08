@@ -1103,7 +1103,7 @@ textarea {
   padding-top: 118px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .hero__thumb {
     padding: 0;
   }
