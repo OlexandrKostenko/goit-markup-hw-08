@@ -588,7 +588,6 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
   min-width: 480px;
-  max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1355,7 +1354,7 @@ textarea {
   left: 0;
   -webkit-transform: translateY(101%);
           transform: translateY(101%);
-  width: 370px;
+  width: 450px;
   height: 294px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1376,7 +1375,7 @@ textarea {
   position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
+  width: 450px;
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
@@ -1396,9 +1395,17 @@ textarea {
   .portfolio__overlay {
     width: 354px;
   }
+  .portfolio__item:hover .portfolio__overlay,
+.portfolio__item:focus .portfolio__overlay {
+    width: 354px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__overlay {
+    width: 370px;
+  }
+  .portfolio__item:hover .portfolio__overlay,
+.portfolio__item:focus .portfolio__overlay {
     width: 370px;
   }
 }
