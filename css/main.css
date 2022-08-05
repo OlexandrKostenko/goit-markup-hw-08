@@ -409,7 +409,8 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style-type: none;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-top: 30px;
   padding-left: 0;
   row-gap: 8px;
   -webkit-column-gap: 15px;
@@ -423,7 +424,12 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 30px;
-    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 }
 .filters__button {

@@ -5,7 +5,8 @@
     flex-wrap: wrap;
     //justify-content: center;
     list-style-type: none;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    margin-top: 30px;
     padding-left: 0;
     row-gap: 8px;
     column-gap: 15px;
@@ -15,7 +16,13 @@
     .filters {
         justify-content: center;
         margin-bottom: 30px;
-        margin-top: 30px;
+    }
+}
+
+@include desktop {
+    .filters {
+        margin-top: 0;
+        margin-bottom: 50px;
     }
 }
 
