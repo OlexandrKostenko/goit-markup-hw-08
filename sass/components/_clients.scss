@@ -5,12 +5,12 @@
     flex-wrap: wrap;
     flex-basis: 50%;
     justify-content: space-evenly;
+    margin: 0 -30px;
 }
 
 @include tablet {
     .clients__list {
         flex-basis: calc((100% - 90px)/3);
-        margin: 0 -30px;
     }
 }
 
@@ -23,7 +23,7 @@
 
 .clients__item {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
     list-style-type: none;
     align-items: center;

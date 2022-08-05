@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: inherit;
-    
+    margin: 0 auto;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -27,7 +27,7 @@
 @include tablet {
     .hero {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/hero-tab.jpg);
+        url(../images/hero-tab.jpg);
         width: 1200px;
         background-size: cover;
     }
@@ -70,7 +70,6 @@ screen and (min-width: 1200px) and (min-resolution: 192dpi) {
 
 .hero__title {
     padding-bottom: 30px;
-    width: 360px;
     font-size: 26px;
     line-height: 1.62;
     margin-left: auto;
@@ -114,7 +113,7 @@ screen and (min-width: 1200px) and (min-resolution: 192dpi) {
 }
 
 .hero__thumb {
-    padding: 118px 60px;
+    padding-top: 118px;
 }
 
 @include desktop {

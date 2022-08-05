@@ -20,6 +20,12 @@
     letter-spacing: 0.03em;
 }
 
+@include desktop {
+    .address {
+        text-align: start;
+    }
+}
+
 .address p,
 .address__mail,
 .address__phone{
@@ -105,7 +111,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
+}
+
+.footer {
     background-color: var(--secondary-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
