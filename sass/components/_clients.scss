@@ -34,6 +34,11 @@
 @include tablet {
     .clients__item {
         width: 226px;
+
+    }
+
+    .clients__item:nth-child(4n) {
+        margin-bottom: 0;
     }
 }
 
@@ -85,6 +90,6 @@
 
 @include desktop {
     .clients {
-        padding-top: 0;
+        padding-top: 94px;
     }
 }

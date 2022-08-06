@@ -13,6 +13,12 @@
     color: var(--white-color);
 }
 
+@include desktop {
+    .logo--footer {
+        text-align: start;
+    }
+}
+
 .address {
     color: var(--white-color);
     font-style: normal;

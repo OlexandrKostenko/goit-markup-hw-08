@@ -76,8 +76,8 @@ ul {
   }
 }
 .section {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -133,6 +133,9 @@ ul {
   .clients__item {
     width: 226px;
   }
+  .clients__item:nth-child(4n) {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
@@ -181,9 +184,23 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .clients {
-    padding-top: 0;
+    padding-top: 94px;
   }
 }
+.logo {
+  font-family: var(--logo-fonts);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: var(--accent-color);
+  padding: 16px 0;
+}
+
+.logo__studio {
+  color: var(--title-text-color);
+}
+
 .mail {
   margin-bottom: 10px;
 }
@@ -412,10 +429,10 @@ ul {
   margin-bottom: 40px;
   margin-top: 30px;
   padding-left: 0;
-  row-gap: 8px;
-  -webkit-column-gap: 15px;
-     -moz-column-gap: 15px;
-          column-gap: 15px;
+  row-gap: 15px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -469,6 +486,11 @@ ul {
   color: var(--white-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .logo--footer {
+    text-align: start;
+  }
+}
 .address {
   color: var(--white-color);
   font-style: normal;
@@ -644,9 +666,20 @@ ul {
     margin: 60px auto;
   }
 }
+.footer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
   .footer-form {
     margin-top: 60px;
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -657,7 +690,7 @@ ul {
   }
 }
 .footer-form__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border-radius: 4px;
   padding: 15px 16px;
@@ -676,6 +709,7 @@ ul {
 @media screen and (min-width: 768px) {
   .footer-form__input {
     margin-left: 150px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -707,7 +741,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 0 120px;
+  margin: 0 140px;
 }
 
 .footer-form__icon {
@@ -1026,7 +1060,7 @@ textarea {
     background-size: cover;
   }
 }
-@media not all, screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-width: 768px) and (min-resolution: 192dpi) {
+@media not all, screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 2dppx), screen and (min-width: 480px) and (min-resolution: 192dpi) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-tab@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tab@2x.jpg");
@@ -1038,22 +1072,29 @@ textarea {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desk.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk.jpg);
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     width: 1600px;
     background-size: cover;
   }
 }
-@media not all, screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+@media not all, screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-desk@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desk@2x.jpg");
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     width: 1600px;
     background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
   }
 }
 .hero__title {
@@ -1101,6 +1142,8 @@ textarea {
 
 .hero__thumb {
   padding-top: 118px;
+  width: 360px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -1108,22 +1151,13 @@ textarea {
     padding: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero__thumb {
+    width: 696px;
+  }
+}
 .hero__section {
   padding: 0;
-}
-
-.logo {
-  font-family: var(--logo-fonts);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  color: var(--accent-color);
-  padding: 16px 0;
-}
-
-.logo__studio {
-  color: var(--title-text-color);
 }
 
 .backdrop {
@@ -1411,8 +1445,6 @@ textarea {
 }
 .team {
   background-color: var(--third-background);
-  padding-top: 30px;
-  padding-bottom: 30px;
   min-width: 480px;
   max-width: 100%;
 }
@@ -1420,6 +1452,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .team {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .team__title,
@@ -1430,7 +1468,6 @@ textarea {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 30px;
-  margin-top: 30px;
 }
 
 @media screen and (min-width: 1200px) {

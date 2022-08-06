@@ -6,8 +6,6 @@
     height: 400px;
     background-color: var(--secondary-background-color);
     color: var(--white-color);
-    //padding-top: 200px;
-    //padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-mobile.jpg);
     background-repeat: no-repeat;
@@ -34,8 +32,8 @@
 }
 
 @media not all, screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), 
-screen and (min-width: 768px) and (min-resolution: 2dppx), 
-screen and (min-width: 768px) and (min-resolution: 192dpi) {
+screen and (min-width: 480px) and (min-resolution: 2dppx), 
+screen and (min-width: 480px) and (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-tab@2x.jpg');
     width: 1200px;
@@ -47,25 +45,33 @@ screen and (min-width: 768px) and (min-resolution: 192dpi) {
     .hero {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero-desk.jpg);
-        height: 600px;
-        padding-top: 200px;
-        padding-bottom: 200px;
+        height: 400px;
+        padding-top: 118px;
+        padding-bottom: 118px;
         width: 1600px;
         background-size: cover;
     }
 }
 
 @media not all, screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), 
-screen and (min-width: 1200px) and (min-resolution: 2dppx), 
-screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+screen and (min-width: 768px) and (min-resolution: 2dppx), 
+screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-desk@2x.jpg');
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     width: 1600px;
     background-size: cover;
   }
+}
+
+@include desktop {
+    .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    }
 }
 
 .hero__title {
@@ -114,12 +120,20 @@ screen and (min-width: 1200px) and (min-resolution: 192dpi) {
 
 .hero__thumb {
     padding-top: 118px;
+    width: 360px;
+    margin: 0 auto;
 }
 
 @include tablet {
     .hero__thumb {
-        padding: 0;
+        padding: 0;  
     }
+}
+
+@include desktop {
+    .hero__thumb  {
+        width: 696px;
+    };
 }
 
 .hero__section {
