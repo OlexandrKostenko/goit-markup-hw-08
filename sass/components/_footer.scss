@@ -124,7 +124,7 @@
     background-color: var(--secondary-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    min-width: 480px;
+    width: 100%;
 }
 
 @include tablet {

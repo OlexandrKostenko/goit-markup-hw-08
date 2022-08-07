@@ -42,11 +42,10 @@
 
 @include tablet {
     .portfolio__item {
-        width: 354px;
-        display: flex;
+    width: 354px;
+    display: flex;
     flex-direction: column;
     height: 100%;
-
     }
 }
 
@@ -93,6 +92,7 @@
 .team__photo,
 .portfolio__photo {
     display: block;
+    width: 100%;
 }
 
 .portfolio__overlay {
@@ -100,8 +100,7 @@
     bottom: 0;
     left: 0;
     transform: translateY(101%);
-    width: 450px;
-    height: 294px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,14 +112,26 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 450px;
-        height: 294px;
+        width: 100%;
         background-color: rgba(33, 150, 243, 0.9);
-        padding: 63px 24px;
         color: var(--white-color);
         transform: translateY(0%);
     }
     }
+
+@include phone {
+    .portfolio__overlay {
+        width: 450px;
+        height: 294px;
+    }
+
+    .portfolio__item:hover .portfolio__overlay,
+    .portfolio__item:focus .portfolio__overlay {
+        width: 450px;
+        height: 294px;
+        padding: 63px 24px;
+    }
+}
 
 
 

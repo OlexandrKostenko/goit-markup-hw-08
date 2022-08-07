@@ -1,11 +1,17 @@
 @import "../utils/brakepoints";
 
 .container {
-    width: 480px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
     }
+
+@include phone {
+    .container {
+        width: 480px;
+    }
+}
 
 @include tablet {
     .container {
@@ -21,8 +27,7 @@
 
 .section {
     padding-top: 60px;
-    padding-bottom: 60px;
-    
+    padding-bottom: 60px;  
 }
 
 @include desktop {

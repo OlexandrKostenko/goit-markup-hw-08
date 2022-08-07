@@ -5,7 +5,13 @@
     flex-wrap: wrap;
     flex-basis: 50%;
     justify-content: space-evenly;
-    margin: 0 -30px;
+    margin: 0 -15px;
+}
+
+@include phone {
+    .clients__list {
+        margin: 0 -30px;
+    }
 }
 
 @include tablet {
@@ -23,12 +29,18 @@
 
 .clients__item {
     display: flex;
-    width: 210px;
-    height: 92px;
+    width: calc(100%/2 - 30px);
     list-style-type: none;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+}
+
+@include phone {
+    .clients__item {
+        width: 210px;
+        height: 92px;
+    }
 }
 
 @include tablet {
@@ -60,7 +72,7 @@
 
 .clients__link {
     width: 100%;
-    height: 100%;
+    height: 92px;
     border: 1px solid var(--primary-border-color);
     border-radius: 4px;
     display: flex;

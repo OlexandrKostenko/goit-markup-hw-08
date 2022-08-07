@@ -1,8 +1,7 @@
 @import "../utils/brakepoints";
 
 .hero {
-    max-width: 100%;
-    min-width: 480px;
+    width: 100%;
     height: 400px;
     background-color: var(--secondary-background-color);
     color: var(--white-color);
@@ -26,7 +25,6 @@
     .hero {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero-tab.jpg);
-        width: 1200px;
         background-size: cover;
     }
 }
@@ -36,7 +34,6 @@ screen and (min-width: 480px) and (min-resolution: 2dppx),
 screen and (min-width: 480px) and (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-tab@2x.jpg');
-    width: 1200px;
     background-size: cover;
   }
 }
@@ -48,7 +45,6 @@ screen and (min-width: 480px) and (min-resolution: 192dpi) {
         height: 400px;
         padding-top: 118px;
         padding-bottom: 118px;
-        width: 1600px;
         background-size: cover;
     }
 }
@@ -61,7 +57,6 @@ screen and (min-width: 768px) and (min-resolution: 192dpi) {
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
-    width: 1600px;
     background-size: cover;
   }
 }
@@ -120,8 +115,13 @@ screen and (min-width: 768px) and (min-resolution: 192dpi) {
 
 .hero__thumb {
     padding-top: 118px;
-    width: 360px;
     margin: 0 auto;
+}
+
+@include phone {
+    .hero__thumb {
+        width: 360px;
+    }
 }
 
 @include tablet {

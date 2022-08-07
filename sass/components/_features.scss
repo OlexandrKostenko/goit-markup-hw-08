@@ -65,13 +65,19 @@
 
 .features__icons {
     display: flex;
-    width: 450px;
-    height: 120px;
+    width: 100%;
     background: var(--third-background);
     border-radius: 4px;
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
+}
+
+@include phone {
+    .features__icons {
+        width: 450px;
+        height: 120px;
+    }
 }
 
 @include tablet {
