@@ -11,7 +11,7 @@
     }
 }
 
-@include phone {
+@media  screen and (min-width:480px) and (max-width:1199px) {  
     .footer-form {
         width: 100%;
     }
@@ -31,8 +31,8 @@
 @include desktop {
     .footer-form {
         margin-top: 0;
-        margin-left: 93px;
-        margin-right: auto;
+        /* margin-left: 93px;
+        margin-right: auto; */
     }
 }
 
