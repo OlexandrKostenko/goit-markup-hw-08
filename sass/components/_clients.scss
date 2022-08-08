@@ -4,16 +4,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-basis: 50%;
-    justify-content: space-evenly;
-    /* margin: 0 -15px; */
+    justify-content: space-between;
 }
 
-@include phone {
-    .clients__list {
-        /* margin: 0 -30px; */
-        justify-content: space-between;
-    }
-}
+
 
 @include tablet {
     .clients__list {
@@ -30,7 +24,7 @@
 
 .clients__item {
     display: flex;
-    width: calc(100%/2 - 30px);
+    width: calc(100%/2 - 15px);
     list-style-type: none;
     align-items: center;
     justify-content: center;
