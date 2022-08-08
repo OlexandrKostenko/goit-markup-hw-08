@@ -16,12 +16,12 @@
     .filters {
         justify-content: center;
         margin-bottom: 30px;
+        margin-top: 0;
     }
 }
 
 @include desktop {
     .filters {
-        margin-top: 0;
         margin-bottom: 50px;
     }
 }

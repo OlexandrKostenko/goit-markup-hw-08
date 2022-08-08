@@ -5,7 +5,13 @@
     flex-direction: column;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:479px) {
+    .footer-form {
+        width: 100%;
+    }
+}
+
+@include phone {
     .footer-form {
         width: 100%;
     }

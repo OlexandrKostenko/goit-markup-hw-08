@@ -5,12 +5,13 @@
     flex-wrap: wrap;
     flex-basis: 50%;
     justify-content: space-evenly;
-    margin: 0 -15px;
+    /* margin: 0 -15px; */
 }
 
 @include phone {
     .clients__list {
-        margin: 0 -30px;
+        /* margin: 0 -30px; */
+        justify-content: space-between;
     }
 }
 
